@@ -1,0 +1,84 @@
+Simple rule-based expert system. 
+Menggunakan Forward Chaining untuk menentukan satu dari empat hewan dengan berberapa opsi yang ada.
+
+Ada 4 Binatang yang ada di opsi yaitu
+"Tiger","Giraffe","zebra","cheetah"
+
+Ada Beberapa Opsi Yang Menuju ke Fakta dan Tidak. Dari opsi yang tersedia kita akan menentukan fakta dengan fakta true yang ada.
+
+
+Disini ada beberapa Opsi Fakta yang tersedia
+"hair","cud","darkspot","longneck"
+
+sementara fakta_baru == Benar:
+          new_fact = False
+Disini juga ada 10 Rule yang akan Menentukan Binatang apa yang merupakan Tanda tanda dari fakta yang ada
+Rule 1  : Jika hewan "Hair" Benar dan Hewan "Mammal"Salah
+	   Hewan['mammal'] = Benar
+Rule 2  : Jika hewan ['Milk'] Benar dan hewan ['mammmal'] Salah:
+          Hewan ['mammal'] = Benar
+Rule 3  : Jika hewan ['Meat'] adalah Benar dan hewan ['carnivore'] adalah Salah:
+          Hewan ['carnivore'] = Benar
+Rule 4  : Jika hewan ['pointedteeth'] adalah Benar dan hewan ['claws'] Benar dan hewan ['forwardeyes'] adalah Benar dan hewan ['carnivore'] adalah Salah:
+          Hewan ['carnivore'] = Benar
+Rule 5  : Jika hewan ['mammal'] adalah Benar dan hewan ['hooves'] adalah Benar dan hewan ['ungulate'] adalah Salah:
+          Hewan ['Ungulate'] = Benar
+Rule 6  : Jika hewan ['mammal'] adalah Benar dan hewan ['cud'] adalah Benar dan hewan ['ungulate'] adalah Salah:
+          Hewan ['ungulate'] = Benar
+Rule 7  : Jika hewan ['mammall'] adalah Benar dan hewan ['Carnivora'] adalah Benar dan hewan ['tawny'] adalah Benar dan hewan ['Darkspot'] adalah Benar dan hewan ['cheetah'] adalah Salah:
+          Hewan ['cheetah'] = Benar
+Rule 8  : Jika hewan ['tawny'] adalah Benar dan hewan ['blackstripes'] adalah Benar dan hewan ['mammal'] adalah Benar dan hewan ['Carnivora'] adalah Benar dan hewan ['Tiger'] adalah Salah:
+          Hewan ['harimau'] = Benar
+Rule 9  : Jika hewan ['darkspot'] adalah Benar dan hewan ['longneck'] adalah Benar dan hewan ['ungulate'] adalah Benar dan hewan ['giraffe'] adalah Salah:
+	  Hewan ['giraffe'] = Benar
+Rule 10 : Jika hewan ['blackstripes'] adalah Benar dan hewan ['ungulate'] adalah Benar dan hewan ['zebra'] adalah Salah:
+          Hewan ['zebra'] = Benar
+
+	  If hewan ['zebra'] Benar:
+	   print ('Your animal is a zebra! \ n')
+
+	  elif Hewan ['tiger'] Benar:
+	   print('Your animal is a tiger!\n') 
+
+          elif Hewan ['giraffe'] Benar:
+           print('Your animal is a giraffe!\n') 
+
+	  elif Hewan ['cheetah'] Benar:
+	   print('Your animal is a cheetah!\n') 
+
+Penyelesaian
+Setelah Melihat Rule Dan Fakta yang ada
+Faktanya Hewan ini Memiliki ciri ciri "hair","cud","darkspot","longneck"
+Dan Pada Rule Bisa dilihat pada rule "Rule 1","Rule 6","Rule 9"
+
+Faktanya : Your Animal is a giraffe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+
+
